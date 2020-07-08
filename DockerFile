@@ -1,0 +1,8 @@
+FROM node:8-alpine
+
+RUN apk add --update --no-cache sshpass
+RUN apk add --update --no-cache openssh sshpass 
+RUN sshpass -v
+RUN export SSHPASS=$USER_PASS
+# hacer la carpeta 'app' el directorio de trabajo actual
+WORKDIR /app
