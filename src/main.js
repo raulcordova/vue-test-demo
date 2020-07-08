@@ -20,7 +20,7 @@ const router = new VueRouter({
   routes,
   linkActiveClass: "active",
   mode: "history",
-  base: '/admin'
+  base: '/'
 });
 
 Vue.config.productionTip = false;
